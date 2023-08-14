@@ -4,8 +4,6 @@ metadata:
   name: fastapiservice
   namespace: imageadentificationapplication
 spec:
-  type: LoadBalancer
-  clusterIP: 10.0.89.178
   selector:
     app: fastapiapp
   
