@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: reactapp
+spec:
+  selector:
+    matchLabels:
+      app: reactapp
+  replicas: 5
+  template:
+    metadata:
+      labels:
+        app: reactapp
+    spec:
+      containers:
+        - name: imageidentificationcon
+          image: sumithpe/imagefrontidentification:66
+          ports:
+            - containerPort: 3000
