@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: imageidentification
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: testsumit
+    server: https://kubernetes.default.svc 
+  project: default 
+  source: 
+    path: .
+    repoURL: https://github.com/sumit871996/imageidentificationopenshift
+    targetRevision: main
+  syncPolicy: 
+    automated:
+      prune: true
+      selfHeal: false
+    syncOptions:
+    - CreateNamespace=true
