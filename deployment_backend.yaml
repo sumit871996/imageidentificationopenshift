@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: fastapiapp
-  namespace: testsumit
+  namespace: testargocd
 spec:
   selector:
     matchLabels:
