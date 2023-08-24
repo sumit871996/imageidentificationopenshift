@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: fastapiapp
-  namespace: imageadentificationapplication
+  namespace: testsumit
 spec:
   selector:
     matchLabels:
