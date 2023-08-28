@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: imageidentificationcon
-          image: image-registry.openshift-image-registry.svc:5000/imageadentificationapplication/image-identification-ui-git@sha256:0987c672960c662c63133e0820fb4c5cf14ba6434e98cdb13835c7d6fc5cfbec
+          image: image-registry.openshift-image-registry.svc:5000/imageidentification/image-identification-fr-git
           ports:
             - containerPort: 3000
