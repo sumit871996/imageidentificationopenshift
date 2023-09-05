@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: reactapp
-  namespace: imageidentification
+  namespace: openshiftdemo
 spec:
   selector:
     matchLabels:
