@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: imageidentificationcon
-          image: image-registry.openshift-image-registry.svc:5000/imageidentification/image-identification-fr-git
+          image: sumithpe/imagefrontidentification:66
           ports:
             - containerPort: 3000
