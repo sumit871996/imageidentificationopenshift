@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: reactapp
-  namespace: openshiftdemo
+  namespace: quaytest
 spec:
   selector:
     matchLabels:
@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: imageidentificationcon
-          image: image-registry.openshift-image-registry.svc:5000/openshiftdemo/image-identification-fr-git:66
+          image: quay.io/sumit-bharat_mandlik/imageidenti:latest
           ports:
             - containerPort: 3000
