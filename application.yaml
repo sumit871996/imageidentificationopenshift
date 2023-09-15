@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: imageidentificationquay
-  namespace: openshift-gitops
+  namespace: openshift-operators
 spec:
   destination:
     namespace: quaytest
