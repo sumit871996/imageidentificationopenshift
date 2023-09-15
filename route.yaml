@@ -1,15 +1,14 @@
 kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
-  name: imageroutequay1
+  name: imageidentificationroute
   namespace: quaytest
   labels:
-    app: imageidentification
+    app.kubernetes.io/instance: imageidentificationquay1
 spec:
+  host: imageidentification-quaytest.apps.hpeopenshift.eastus.aroapp.io
   to:
     kind: Service
     name: reactservice
-    weight: 100
   port:
-    targetPort: 3000-tcp
-  wildcardPolicy: None
+    targetPort: 3000
