@@ -6,7 +6,6 @@ metadata:
   labels:
     app: imageidentification
 spec:
-  host: imageroutequay-quaytest.apps.hpeopenshift.eastus.aroapp.io
   to:
     kind: Service
     name: reactservice
