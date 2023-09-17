@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: imageidentificationquay1
+  name: imageidentificationquay2
   namespace: openshift-gitops
 spec:
   destination:
