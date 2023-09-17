@@ -2,7 +2,7 @@ kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
   name: imageidentificationroute
-  namespace: quaytest
+  namespace: demopipeline
   labels:
     app.kubernetes.io/instance: imageidentificationquay1
 spec:
