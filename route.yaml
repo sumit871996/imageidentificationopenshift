@@ -4,6 +4,7 @@ metadata:
   name: imageidentificationroute
   namespace: quaytest
 spec:
+  host: imageidentificationroute-quaytest.apps.hpeopenshift.eastus.aroapp.io
   to:
     kind: Service
     name: reactservice
