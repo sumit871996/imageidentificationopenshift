@@ -4,7 +4,7 @@ metadata:
   name: imageidentificationroute
   namespace: demoopenshift
 spec:
-  host: imageidentificationroute-quaytest.apps.hpeopenshift.eastus.aroapp.io
+  host: imageidentificationroute-demoopenshift.apps.hpeopenshift.eastus.aroapp.io
   to:
     kind: Service
     name: reactservice
