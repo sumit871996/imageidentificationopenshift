@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: reactapp
-  namespace: demoopenshift
+  namespace: argocdproject
 spec:
   selector:
     matchLabels:

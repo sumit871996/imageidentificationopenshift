@@ -2,9 +2,9 @@ kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
   name: imageidentificationroute
-  namespace: demoopenshift
+  namespace: argocdproject
 spec:
-  host: imageidentificationroute-demoopenshift.apps.hpeopenshift.eastus.aroapp.io
+  host: imageidentificationroute-argocdproject.apps.hpeopenshift.eastus.aroapp.io
   to:
     kind: Service
     name: reactservice
