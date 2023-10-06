@@ -1,20 +1,20 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: a12openshiftdemo
+  name: applicationimageidentification
   namespace: openshift-gitops
 spec:
   destination:
-    namespace: quaytest
-    server: https://kubernetes.default.svc 
-  project: default 
-  source: 
+    namespace: demoopenshift
+    server: https://kubernetes.default.svc
+  project: default
+  source:
     path: .
     repoURL: https://github.com/sumit871996/imageidentificationopenshift
     targetRevision: main
-  syncPolicy: 
+  syncPolicy:
     automated:
       prune: true
       selfHeal: false
     syncOptions:
-    - CreateNamespace=true
+      - CreateNamespace=true

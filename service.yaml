@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: reactservice
-  namespace: quaytest
+  namespace: demoopenshift
 spec:
   selector:
     app: reactapp

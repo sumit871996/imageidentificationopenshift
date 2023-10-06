@@ -2,7 +2,7 @@ kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
   name: imageidentificationroute
-  namespace: quaytest
+  namespace: demoopenshift
 spec:
   host: imageidentificationroute-quaytest.apps.hpeopenshift.eastus.aroapp.io
   to:
