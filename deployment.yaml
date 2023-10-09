@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: imageidentificationcon
-          image: quay.io/sumit-bharat_mandlik/imageidenti:0.3.0
+          image: quayhpe-quay-openshift-operators.apps.ocp02.anpslab.com/hpe/imageidentiication:0.2.0
           ports:
             - containerPort: 3000
