@@ -16,5 +16,8 @@ spec:
       containers:
         - name: imageidentificationcon
           image: quayhpe-quay-openshift-operators.apps.ocp02.anpslab.com/hpe/imageidentiication:0.2.0
+          env:
+            - name: DOCKER_TLS_VERIFY
+              value: "false"
           ports:
             - containerPort: 3000
