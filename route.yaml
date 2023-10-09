@@ -6,7 +6,7 @@ metadata:
   labels:
     app.kubernetes.io/instance: imageidentificationquay1
 spec:
-  host: imageidentificationroute-demopipeline.apps.hpeopenshift.eastus.aroapp.io
+  host: imageidentificationroute-demopipeline.apps.ocp02.anpslab.com
   to:
     kind: Service
     name: reactservice
