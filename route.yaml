@@ -10,3 +10,7 @@ spec:
     name: reactservice
   port:
     targetPort: 3000
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Allow
+  wildcardPolicy: None
